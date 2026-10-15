@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "titulo": "Funda para iPhone",
+    "precio": 14500,
+    "imagen": "/img/case iphone.webp",
+    "categoria": "fundas",
+    "descripcion": "Funda resistente para proteger tu iPhone."
+  },
+  {
+    "id": 2,
+    "titulo": "Cargador rápido 20W USB-C",
+    "precio": 22000,
+    "imagen": "/img/cargador 20 w tipo c.webp",
+    "categoria": "cargadores",
+    "descripcion": "Carga rápida y segura para dispositivos compatibles."
+  },
+  {
+    "id": 3,
+    "titulo": "Cable mallado tipo C a C",
+    "precio": 9800,
+    "imagen": "/img/cable mallado iphone tipo c a c.webp",
+    "categoria": "cables",
+    "descripcion": "Cable reforzado de alta resistencia."
+  },
+  {
+    "id": 4,
+    "titulo": "Protector de vidrio",
+    "precio": 5500,
+    "imagen": "/img/protector de vidrio.webp",
+    "categoria": "protectores",
+    "descripcion": "Protección para la pantalla contra golpes y rayones."
+  },
+  {
+    "id": 5,
+    "titulo": "Cargador MagSafe",
+    "precio": 38000,
+    "imagen": "/img/cargador mag safe.webp",
+    "categoria": "cargadores",
+    "descripcion": "Carga inalámbrica magnética para iPhone."
+  },
+  {
+    "id": 6,
+    "titulo": "Cargador portátil",
+    "precio": 42000,
+    "imagen": "/img/cargador portatil.webp",
+    "categoria": "cargadores",
+    "descripcion": "Batería portátil para cargar tus dispositivos."
+  }
+]
