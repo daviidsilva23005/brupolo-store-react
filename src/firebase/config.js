@@ -13,3 +13,5 @@ export const db = getFirestore(app)
 export const auth = getAuth(app)
 // Copiar aquí el UID de tu usuario de Firebase Authentication.
 export const ADMIN_UID = 'vfSjIsLcnYU0BQJDgq7d3bhxiL93'
+// Cuentas autorizadas: propietario y cuenta de evaluación.
+export const ADMIN_UIDS = [ADMIN_UID, 'KrPPsyyWz0ZovPcPRc7gWB5D5GI2']

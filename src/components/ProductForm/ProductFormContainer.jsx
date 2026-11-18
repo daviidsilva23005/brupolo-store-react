@@ -25,7 +25,7 @@ export function ProductFormContainer() {
     try {
       const data = Object.fromEntries(Object.entries(product).map(([key, value]) => [key, value.trim()]))
       const id = await createProduct({ ...data, precio: Number(data.precio) })
-      navigate(`/product-success/${id}`)
+      navigate(`/admin/product-success/${id}`)
     } catch {
       setErrors({ general: 'No se pudo guardar. Revisá la conexión, el usuario administrador y las reglas de Firestore.' })
     } finally { busy.current = false; setLoading(false) }

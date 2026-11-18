@@ -1,4 +1,4 @@
-import { collection, getDocs, getDoc, doc, addDoc, runTransaction } from 'firebase/firestore'
+import { collection, getDocs, getDoc, doc, addDoc, runTransaction, onSnapshot } from 'firebase/firestore'
 import { db } from '../firebase/config'
 export async function getProducts() {
   const result = await getDocs(collection(db, 'productos'))
@@ -31,4 +31,16 @@ export async function importInitialProducts() {
     })
     return added
   })
+}
+
+// Devuelve una función de limpieza para cancelar el listener al desmontar.
+export function subscribeProducts(onNext, onError) {
+  return onSnapshot(collection(db, 'productos'), result => {
+    onNext(result.docs.map(document => ({ ...document.data(), id: document.id })))
+  }, onError)
+}
+export function subscribeProductById(id, onNext, onError) {
+  return onSnapshot(doc(db, 'productos', String(id)), result => {
+    onNext(result.exists() ? { ...result.data(), id: result.id } : null)
+  }, onError)
 }

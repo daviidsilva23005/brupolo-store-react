@@ -167,3 +167,12 @@ label { display: block; margin-bottom: 6px; font-weight: bold; }
 .cart-row div { flex: 1; min-width: 180px; }
 .cart-row h2 { font-size: 20px; text-align: left; margin-bottom: 12px; }
 header nav ul { flex-wrap: wrap; justify-content: center; }
+
+/* Layout independiente del panel de administración. */
+.admin-layout { min-height: 100vh; display: flex; flex-direction: column; background: #eef2ff; }
+.admin-header { background: #172554; flex-wrap: wrap; gap: 16px; }
+.admin-header h1 { font-size: 24px; }
+.admin-layout main { flex: 1; }
+.session-email { max-width: 1200px; margin: 0 auto 24px; color: #475569; overflow-wrap: anywhere; }
+.admin-layout details { margin-bottom: 24px; padding: 16px; border: 1px solid #c7d2fe; border-radius: 12px; background: white; }
+.admin-layout summary { cursor: pointer; font-weight: bold; }

@@ -2,7 +2,10 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function isAdmin() {
-      return request.auth != null && request.auth.uid == 'PEGAR_TU_UID_AQUI';
+      return request.auth != null && request.auth.uid in [
+        'vfSjIsLcnYU0BQJDgq7d3bhxiL93',
+        'KrPPsyyWz0ZovPcPRc7gWB5D5GI2'
+      ];
     }
     function validProduct() {
       let p = request.resource.data;
